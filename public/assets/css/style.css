@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+    margin: auto;
+    background-color: burlywood;
+
+}
+img{
+    width: 20%;
+
+}
+h1{
+    color:red;
+}
+table{
+    text-align: left;
+    border:solid black 2px;
+}
+th{
+    text-align: center;
+}
+td{
+    border-top: solid black 2px;
+}
+#tablesBtn{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}

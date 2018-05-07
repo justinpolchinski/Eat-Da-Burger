@@ -1,0 +1,38 @@
+<img id="burgerImg" src="/assets/hamburger-3184108_640.png" alt="">
+<h1>Eat-Da-Burger</h1>
+<div id="tablesBtn">
+    <table>
+        <th>My Burgers!!!</th>
+        <tbody>
+            {{#each burgers}}
+            {{#unless devoured}}
+                <tr>
+                    <td>
+                        <div>{{burger_name}}</div>
+                        <button type="button" class="eatBurger" value="{{id}}">Devour Burger</button>
+                    </td>
+                </tr>
+            {{/unless}}
+            {{/each}}
+        </tbody>
+    </table>
+    <div style="border: solid black 2px;"></div>
+    <table>
+    <th>That Was Great!</th>
+    <tbody>
+        {{#each burgers}}
+            {{#if devoured}}
+                <tr>
+                    <td>{{burger_name}}</td>
+                </tr>
+            {{/if}}
+        {{/each}}
+    </tbody>
+</table>
+</div>
+
+<form class="create-form">
+    <label for="addBurger">Burger Name:</label>
+    <input id="addBurger" type='text' name="name" ></br>
+    <button type="submit">SUBMIT</button>
+</form>
